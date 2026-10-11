@@ -1,0 +1,15 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const app = initializeApp({
+  apiKey: "AIzaSyCvmQNWlbQH7RIMP3JE8WJo7PtWaq2G3XU",
+  authDomain: "jas-auto-73fdf.firebaseapp.com",
+  projectId: "jas-auto-73fdf",
+  storageBucket: "jas-auto-73fdf.firebasestorage.app",
+  messagingSenderId: "885723548544",
+  appId: "1:885723548544:web:16c767950b0e8685cd4f65"
+});
+
+export const db = getFirestore(app);
+export const auth = getAuth(app);
